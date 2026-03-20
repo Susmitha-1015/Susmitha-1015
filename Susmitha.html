@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Susmitha Pasnur | UiPath RPA Developer & Automation Engineer</title>
+<meta name="description" content="UiPath Certified Advanced RPA Developer with 7+ years experience in enterprise automation across aviation, insurance and healthcare.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--blue:#1F4E79;--mid:#2E75B6;--light:#EBF3FB;--gold:#F9D949;--green:#1D9E75;--text:#1a1a1a;--gray:#555;--border:#e0e8f0;--bg:#f5f8fc}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:var(--text);background:#fff;line-height:1.6}
+a{color:var(--mid);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid var(--border);padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:56px}
+.nav-name{font-size:16px;font-weight:700;color:var(--blue)}
+.nav-links{display:flex;gap:24px;list-style:none}
+.nav-links a{font-size:13px;font-weight:600;color:var(--gray);transition:color .15s}
+.nav-links a:hover{color:var(--blue);text-decoration:none}
+.nav-cta{padding:7px 18px;background:var(--blue);color:#fff;border-radius:20px;font-size:13px;font-weight:600;transition:background .15s}
+.nav-cta:hover{background:var(--mid);text-decoration:none}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,var(--blue) 0%,var(--mid) 100%);color:#fff;padding:80px 5% 70px;display:flex;align-items:center;gap:40px;flex-wrap:wrap}
+.hero-text{flex:1;min-width:280px}
+.hero-badge{display:inline-block;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:20px;padding:5px 14px;font-size:12px;font-weight:600;margin-bottom:18px}
+.hero h1{font-size:38px;font-weight:700;margin-bottom:10px;line-height:1.2}
+.hero h1 span{color:var(--gold)}
+.hero-sub{font-size:16px;opacity:0.88;margin-bottom:24px;line-height:1.6}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-primary{padding:12px 28px;background:#fff;color:var(--blue);border-radius:8px;font-size:14px;font-weight:700;transition:all .15s}
+.btn-primary:hover{background:var(--gold);text-decoration:none}
+.btn-secondary{padding:12px 28px;border:2px solid rgba(255,255,255,0.5);color:#fff;border-radius:8px;font-size:14px;font-weight:600;transition:all .15s}
+.btn-secondary:hover{background:rgba(255,255,255,0.1);text-decoration:none}
+.hero-stats{display:flex;gap:32px;flex-wrap:wrap;margin-top:32px}
+.hero-stat{text-align:center}
+.hero-stat-n{font-size:32px;font-weight:700;color:var(--gold)}
+.hero-stat-l{font-size:12px;opacity:0.8;margin-top:2px}
+.status-dot{display:inline-flex;align-items:center;gap:6px;background:rgba(29,158,117,0.2);border:1px solid rgba(29,158,117,0.5);border-radius:20px;padding:5px 14px;font-size:12px;font-weight:600;margin-bottom:18px}
+.dot{width:8px;height:8px;border-radius:50%;background:#4ade80;animation:pulse 1.5s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.6;transform:scale(0.85)}}
+
+/* SECTIONS */
+section{padding:64px 5%}
+section:nth-child(even){background:var(--bg)}
+.section-tag{font-size:12px;font-weight:700;color:var(--mid);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px}
+.section-title{font-size:28px;font-weight:700;color:var(--blue);margin-bottom:8px}
+.section-sub{font-size:15px;color:var(--gray);margin-bottom:36px;max-width:600px}
+
+/* CERTS */
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.cert-card{background:#fff;border:1.5px solid var(--border);border-radius:12px;padding:16px;display:flex;align-items:flex-start;gap:12px;transition:box-shadow .2s}
+.cert-card:hover{box-shadow:0 4px 16px rgba(31,78,121,0.1)}
+.cert-icon{width:40px;height:40px;border-radius:10px;background:var(--light);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.cert-name{font-size:13px;font-weight:700;color:var(--blue);margin-bottom:3px}
+.cert-org{font-size:11px;color:var(--gray)}
+.cert-badge{display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;background:#E1F5EE;color:#0F6E56;margin-top:4px}
+
+/* SKILLS */
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.skill-group{background:#fff;border:1.5px solid var(--border);border-radius:12px;padding:16px}
+.skill-group-title{font-size:13px;font-weight:700;color:var(--blue);margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.skill-tags{display:flex;flex-wrap:wrap;gap:6px}
+.skill-tag{font-size:11px;font-weight:600;padding:4px 10px;border-radius:20px;background:var(--light);color:var(--mid);border:1px solid #B5D4F4}
+
+/* EXPERIENCE */
+.exp-timeline{position:relative;padding-left:28px}
+.exp-timeline::before{content:'';position:absolute;left:8px;top:0;bottom:0;width:2px;background:var(--border)}
+.exp-item{position:relative;margin-bottom:32px}
+.exp-item::before{content:'';position:absolute;left:-24px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--mid);border:2px solid #fff;box-shadow:0 0 0 2px var(--mid)}
+.exp-item.current::before{background:var(--green)}
+.exp-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:4px}
+.exp-title{font-size:15px;font-weight:700;color:var(--blue)}
+.exp-dates{font-size:12px;font-weight:600;color:var(--gray);white-space:nowrap;margin-top:2px}
+.exp-company{font-size:13px;font-weight:600;color:var(--gray);margin-bottom:8px}
+.exp-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
+.exp-tag{font-size:10px;font-weight:600;padding:2px 8px;border-radius:20px;background:var(--light);color:var(--mid)}
+.exp-bullets{font-size:13px;color:var(--gray);line-height:1.8;padding-left:16px}
+.exp-bullets li{margin-bottom:3px}
+
+/* PROJECTS */
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.project-card{background:#fff;border:1.5px solid var(--border);border-radius:14px;padding:18px;transition:all .2s;display:flex;flex-direction:column;gap:10px}
+.project-card:hover{box-shadow:0 6px 20px rgba(31,78,121,0.12);transform:translateY(-2px)}
+.project-top{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
+.project-icon{font-size:28px}
+.project-industry{font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px}
+.project-title{font-size:15px;font-weight:700;color:var(--blue)}
+.project-company{font-size:12px;color:var(--gray);font-weight:600}
+.project-desc{font-size:13px;color:var(--gray);line-height:1.65}
+.project-impact{background:var(--light);border-radius:8px;padding:8px 12px;font-size:12px;color:var(--mid);font-weight:600}
+.project-tech{display:flex;flex-wrap:wrap;gap:4px}
+.tech-tag{font-size:10px;padding:2px 7px;border-radius:20px;background:#f0f4f8;color:var(--gray);border:1px solid var(--border)}
+
+/* CONTACT */
+.contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+.contact-info{display:flex;flex-direction:column;gap:16px}
+.contact-item{display:flex;align-items:center;gap:12px;font-size:14px;color:var(--gray)}
+.contact-icon{width:40px;height:40px;border-radius:10px;background:var(--light);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.contact-form{background:var(--bg);border-radius:14px;padding:24px;border:1.5px solid var(--border)}
+.form-row{margin-bottom:14px}
+.form-row label{font-size:12px;font-weight:700;color:var(--blue);display:block;margin-bottom:5px}
+.form-row input,.form-row textarea{width:100%;padding:10px 14px;border:1.5px solid var(--border);border-radius:8px;font-size:13px;font-family:inherit;color:var(--text);background:#fff;outline:none;transition:border .15s}
+.form-row input:focus,.form-row textarea:focus{border-color:var(--mid)}
+.form-row textarea{min-height:100px;resize:vertical}
+.submit-btn{width:100%;padding:12px;background:var(--blue);color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit;transition:background .15s}
+.submit-btn:hover{background:var(--mid)}
+
+/* FOOTER */
+footer{background:var(--blue);color:#fff;padding:32px 5%;text-align:center}
+.footer-links{display:flex;justify-content:center;gap:24px;margin-bottom:16px;flex-wrap:wrap}
+.footer-links a{color:rgba(255,255,255,0.7);font-size:13px;font-weight:600;transition:color .15s}
+.footer-links a:hover{color:#fff;text-decoration:none}
+.footer-copy{font-size:12px;opacity:0.5}
+
+/* OPEN TO WORK BANNER */
+.otw-banner{background:linear-gradient(90deg,#1D9E75,#0F6E56);color:#fff;padding:12px 5%;display:flex;align-items:center;justify-content:center;gap:12px;font-size:13px;font-weight:600;flex-wrap:wrap;text-align:center}
+.otw-banner a{color:#fff;border:1px solid rgba(255,255,255,0.5);border-radius:20px;padding:4px 14px;font-size:12px;transition:all .15s}
+.otw-banner a:hover{background:rgba(255,255,255,0.15);text-decoration:none}
+
+@media(max-width:640px){
+  .hero h1{font-size:26px}
+  nav .nav-links{display:none}
+  .contact-wrap{grid-template-columns:1fr}
+  .exp-timeline{padding-left:16px}
+}
+</style>
+</head>
+<body>
+
+<!-- OPEN TO WORK BANNER -->
+<div class="otw-banner">
+  <span class="dot"></span>
+  Open to Work — Full-time Permanent &amp; C2C Contract Roles | H1B Transfer Welcome
+  <a href="mailto:your.email@gmail.com">Contact Me</a>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-name">Susmitha Pasnur</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="mailto:your.email@gmail.com" class="nav-cta">Hire Me</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="about">
+  <div class="hero-text">
+    <div class="status-dot"><span class="dot"></span> Open to Work</div>
+    <h1>Susmitha <span>Pasnur</span></h1>
+    <p class="hero-sub">UiPath Certified Advanced RPA Developer &amp; Business Analyst with 7+ years delivering enterprise automation solutions across aviation, insurance, and healthcare industries.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary">Get In Touch</a>
+      <a href="#projects" class="btn-secondary">View Projects</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="hero-stat-n">7+</div><div class="hero-stat-l">Years Experience</div></div>
+      <div class="hero-stat"><div class="hero-stat-n">14+</div><div class="hero-stat-l">Bots Deployed</div></div>
+      <div class="hero-stat"><div class="hero-stat-n">6</div><div class="hero-stat-l">UiPath Certs</div></div>
+      <div class="hero-stat"><div class="hero-stat-n">3</div><div class="hero-stat-l">Industries</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="section-tag">Credentials</div>
+  <div class="section-title">UiPath Certifications</div>
+  <div class="section-sub">All certifications are active and verified through UiPath Academy.</div>
+  <div class="cert-grid">
+    <div class="cert-card"><div class="cert-icon">🏆</div><div><div class="cert-name">UiPath Certified Advanced RPA Developer</div><div class="cert-org">UiPath Academy</div><span class="cert-badge">⭐ Top Certification</span></div></div>
+    <div class="cert-card"><div class="cert-icon">🏗️</div><div><div class="cert-name">UiPath RPA Solution Architecture</div><div class="cert-org">UiPath Academy</div><span class="cert-badge">Active</span></div></div>
+    <div class="cert-card"><div class="cert-icon">📄</div><div><div class="cert-name">UiPath Document Understanding</div><div class="cert-org">UiPath Academy</div><span class="cert-badge">Active</span></div></div>
+    <div class="cert-card"><div class="cert-icon">📊</div><div><div class="cert-name">UiPath Business Analyst</div><div class="cert-org">UiPath Academy</div><span class="cert-badge">Active</span></div></div>
+    <div class="cert-card"><div class="cert-icon">📈</div><div><div class="cert-name">UiPath Business Insights</div><div class="cert-org">UiPath Academy</div><span class="cert-badge">Active</span></div></div>
+    <div class="cert-card"><div class="cert-icon">🎓</div><div><div class="cert-name">UiPath Level 1, 2 &amp; 3 (Foundation–Advanced)</div><div class="cert-org">UiPath Academy</div><span class="cert-badge">Active</span></div></div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-tag">Technical Expertise</div>
+  <div class="section-title">Skills &amp; Technologies</div>
+  <div class="section-sub">7+ years of hands-on experience across RPA platforms, AI tools, cloud services, and enterprise systems.</div>
+  <div class="skills-grid">
+    <div class="skill-group"><div class="skill-group-title">🤖 RPA Platforms</div><div class="skill-tags"><span class="skill-tag">UiPath Studio</span><span class="skill-tag">UiPath Orchestrator</span><span class="skill-tag">Power Automate</span><span class="skill-tag">Blue Prism</span><span class="skill-tag">Automation Anywhere</span></div></div>
+    <div class="skill-group"><div class="skill-group-title">🧠 AI &amp; Intelligent Automation</div><div class="skill-tags"><span class="skill-tag">Document Understanding</span><span class="skill-tag">AI Center</span><span class="skill-tag">LLM/GPT Integration</span><span class="skill-tag">AI Builder</span><span class="skill-tag">OCR (Google, ABBYY, Tesseract)</span></div></div>
+    <div class="skill-group"><div class="skill-group-title">☁️ Cloud &amp; DevOps</div><div class="skill-tags"><span class="skill-tag">Azure DevOps</span><span class="skill-tag">CI/CD Pipelines</span><span class="skill-tag">AWS</span><span class="skill-tag">Microsoft Azure</span><span class="skill-tag">Git</span><span class="skill-tag">Docker</span></div></div>
+    <div class="skill-group"><div class="skill-group-title">💻 Programming</div><div class="skill-tags"><span class="skill-tag">Python</span><span class="skill-tag">C#</span><span class="skill-tag">VB.Net</span><span class="skill-tag">JavaScript</span><span class="skill-tag">SQL</span><span class="skill-tag">PowerShell</span></div></div>
+    <div class="skill-group"><div class="skill-group-title">🗄️ Databases</div><div class="skill-tags"><span class="skill-tag">MS SQL Server</span><span class="skill-tag">MySQL</span><span class="skill-tag">Oracle</span><span class="skill-tag">PostgreSQL</span><span class="skill-tag">MongoDB</span></div></div>
+    <div class="skill-group"><div class="skill-group-title">📋 BA &amp; Project Tools</div><div class="skill-tags"><span class="skill-tag">Jira</span><span class="skill-tag">Confluence</span><span class="skill-tag">ServiceNow</span><span class="skill-tag">Visio</span><span class="skill-tag">LucidChart</span><span class="skill-tag">Agile/Scrum</span></div></div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-tag">Career Journey</div>
+  <div class="section-title">Professional Experience</div>
+  <div class="section-sub">7+ years of enterprise automation delivery across Fortune 500 companies and government clients.</div>
+  <div class="exp-timeline">
+
+    <div class="exp-item current">
+      <div class="exp-header">
+        <div><div class="exp-title">Senior RPA Developer &amp; Business Analyst</div><div class="exp-company">United Airlines | Houston, TX</div></div>
+        <div class="exp-dates">June 2024 – Present</div>
+      </div>
+      <div class="exp-tags"><span class="exp-tag">UiPath</span><span class="exp-tag">AI Center</span><span class="exp-tag">Document Understanding</span><span class="exp-tag">Azure DevOps</span><span class="exp-tag">LLM/GPT</span><span class="exp-tag">Power Automate</span></div>
+      <ul class="exp-bullets">
+        <li>Lead enterprise automation program — 15+ production bots across operations, finance &amp; compliance</li>
+        <li>Implement AI-enabled automations using UiPath AI Center and LLMs for intelligent document processing</li>
+        <li>Build CI/CD pipelines in Azure DevOps for automated deployment across dev, QA &amp; production</li>
+        <li>Mentor junior developers and define automation CoE governance standards</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <div><div class="exp-title">RPA Developer → ENT Software Engineer Lead Consultant</div><div class="exp-company">National General Insurance (Allstate) | Houston, TX</div></div>
+        <div class="exp-dates">Feb 2021 – May 2024</div>
+      </div>
+      <div class="exp-tags"><span class="exp-tag">UiPath</span><span class="exp-tag">Blue Prism</span><span class="exp-tag">OpenAI/GPT</span><span class="exp-tag">EPIC</span><span class="exp-tag">Citrix</span><span class="exp-tag">RE Framework</span></div>
+      <ul class="exp-bullets">
+        <li>Promoted to Enterprise Software Engineer Lead Consultant — delivered 7 automation projects in insurance &amp; healthcare</li>
+        <li>Integrated OpenAI/GPT into UiPath workflows for contextual NLP and intelligent decision-making</li>
+        <li>Automated EPIC Claims Entry, Bulk Pay Approval, and Web Carrier workflows — eliminating manual processing</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <div><div class="exp-title">RPA Developer &amp; Business Analyst</div><div class="exp-company">ElementBlue Inc. | Houston, TX</div></div>
+        <div class="exp-dates">Nov 2020 – Jan 2021</div>
+      </div>
+      <div class="exp-tags"><span class="exp-tag">Document Understanding</span><span class="exp-tag">OCR</span><span class="exp-tag">Government</span><span class="exp-tag">Healthcare</span></div>
+      <ul class="exp-bullets">
+        <li>Sole developer for State of Oregon OHA healthcare document automation — government-grade compliance</li>
+        <li>Built multi-OCR-engine Document Understanding pipeline (Google, ABBYY, Tesseract, Omnipage)</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <div><div class="exp-title">RPA Developer &amp; Business Analyst</div><div class="exp-company">Olive AI Automation Solutions | Columbus, OH</div></div>
+        <div class="exp-dates">May 2019 – May 2020</div>
+      </div>
+      <div class="exp-tags"><span class="exp-tag">UiPath</span><span class="exp-tag">Blue Prism</span><span class="exp-tag">SAP</span><span class="exp-tag">Healthcare</span></div>
+      <ul class="exp-bullets">
+        <li>Automated SAP VIM invoice processing and API-driven reconciliation for healthcare clients</li>
+        <li>Delivered end-to-end client engagements including knowledge transfer and production support</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <div><div class="exp-title">Software Quality Analyst</div><div class="exp-company">Wipro Technologies (Google Waymo) | Remote</div></div>
+        <div class="exp-dates">Aug 2015 – Aug 2018</div>
+      </div>
+      <div class="exp-tags"><span class="exp-tag">QA</span><span class="exp-tag">ML Data Validation</span><span class="exp-tag">Autonomous Vehicles</span></div>
+      <ul class="exp-bullets">
+        <li>Validated ML training data for Google's Waymo self-driving program — part of pilot QA batch</li>
+        <li>Developed test plans and led QA team improving dataset accuracy for autonomous vehicle algorithms</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-tag">Portfolio</div>
+  <div class="section-title">Key Projects</div>
+  <div class="section-sub">Real enterprise automation delivered end-to-end across multiple industries.</div>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <div class="project-top"><div class="project-icon">✈️</div><span class="project-industry" style="background:#EBF3FB;color:#185FA5">Aviation</span></div>
+      <div class="project-title">AI-Enabled PNR & Oracle Automation</div>
+      <div class="project-company">United Airlines</div>
+      <div class="project-desc">Automated PNR handling, Oracle report extraction, invoice processing, and purchase order automation using UiPath AI Center and Document Understanding.</div>
+      <div class="project-impact">✦ Eliminated manual data extraction across finance & compliance teams</div>
+      <div class="project-tech"><span class="tech-tag">UiPath</span><span class="tech-tag">AI Center</span><span class="tech-tag">Oracle</span><span class="tech-tag">Azure DevOps</span><span class="tech-tag">LLM</span></div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-top"><div class="project-icon">🏥</div><span class="project-industry" style="background:#FBEAF0;color:#993556">Insurance</span></div>
+      <div class="project-title">EPIC Claims Entry Automation (FNOL)</div>
+      <div class="project-company">National General Insurance (Allstate)</div>
+      <div class="project-desc">End-to-end automation of FNOL claims entry — bot extracts claim data from emails and keys into EPIC system with zero manual intervention. Deployed for Other Party and Accords claim types.</div>
+      <div class="project-impact">✦ Reduced cycle time from ~10 min/claim to near-zero manual touchpoints</div>
+      <div class="project-tech"><span class="tech-tag">UiPath</span><span class="tech-tag">Citrix</span><span class="tech-tag">OCR</span><span class="tech-tag">Computer Vision</span><span class="tech-tag">RE Framework</span></div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-top"><div class="project-icon">🤖</div><span class="project-industry" style="background:#EEEDFE;color:#534AB7">AI/LLM</span></div>
+      <div class="project-title">GPT-Powered Insurance Workflow</div>
+      <div class="project-company">National General Insurance (Allstate)</div>
+      <div class="project-desc">First LLM-integrated automation in the organization — integrated OpenAI/GPT APIs into UiPath workflows enabling contextual NLP, claims summarization, and intelligent decision routing.</div>
+      <div class="project-impact">✦ First GPT-powered automation program in the organization</div>
+      <div class="project-tech"><span class="tech-tag">OpenAI</span><span class="tech-tag">UiPath</span><span class="tech-tag">REST APIs</span><span class="tech-tag">NLP</span></div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-top"><div class="project-icon">🏛️</div><span class="project-industry" style="background:#E1F5EE;color:#0F6E56">Government</span></div>
+      <div class="project-title">OHA Data Validation & Reporting</div>
+      <div class="project-company">State of Oregon (via ElementBlue)</div>
+      <div class="project-desc">Government-grade document intelligence automation for Oregon's Office of Health Analytics — multi-OCR-engine pipeline processing structured and semi-structured healthcare documents at scale.</div>
+      <div class="project-impact">✦ Met strict state IT governance, data privacy & audit standards</div>
+      <div class="project-tech"><span class="tech-tag">UiPath</span><span class="tech-tag">ABBYY</span><span class="tech-tag">Tesseract</span><span class="tech-tag">RE Framework</span><span class="tech-tag">AWS</span></div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-top"><div class="project-icon">💳</div><span class="project-industry" style="background:#FAEEDA;color:#854F0B">Insurance</span></div>
+      <div class="project-title">EPIC Bulk Pay Approval Bot</div>
+      <div class="project-company">National General Insurance (Allstate)</div>
+      <div class="project-desc">Automated insurance payment approval — reads client payment data from Excel, matches against EPIC application, approves matched payments automatically, and routes supervisor-level approvals with notes.</div>
+      <div class="project-impact">✦ Eliminated manual payment processing for entire AP team</div>
+      <div class="project-tech"><span class="tech-tag">UiPath</span><span class="tech-tag">Excel ETL</span><span class="tech-tag">Citrix</span><span class="tech-tag">Computer Vision</span></div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-top"><div class="project-icon">📄</div><span class="project-industry" style="background:#E1F5EE;color:#0F6E56">Healthcare</span></div>
+      <div class="project-title">SAP VIM Invoice Processing</div>
+      <div class="project-company">Olive AI Automation Solutions</div>
+      <div class="project-desc">End-to-end AP invoice automation — SAP VIM extraction, exception matching, API-driven data reconciliation, template population, and automated email confirmation. Fully unattended operation.</div>
+      <div class="project-impact">✦ Reduced AP processing time with fully unattended operation</div>
+      <div class="project-tech"><span class="tech-tag">UiPath</span><span class="tech-tag">SAP</span><span class="tech-tag">REST APIs</span><span class="tech-tag">Blue Prism</span><span class="tech-tag">Excel</span></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-tag">Let's Connect</div>
+  <div class="section-title">Get In Touch</div>
+  <div class="section-sub">Open to Full-time permanent roles and C2C contract engagements. H1B transfer welcome.</div>
+  <div class="contact-wrap">
+    <div class="contact-info">
+      <div class="contact-item"><div class="contact-icon">📍</div><div><strong>Location</strong><br>Houston, TX — Open to Remote &amp; Hybrid</div></div>
+      <div class="contact-item"><div class="contact-icon">💼</div><div><strong>Open To</strong><br>Full-time Permanent &amp; C2C Contract</div></div>
+      <div class="contact-item"><div class="contact-icon">🛂</div><div><strong>Work Authorization</strong><br>H1B Visa — Transfer &amp; Sponsorship Welcome</div></div>
+      <div class="contact-item"><div class="contact-icon">📧</div><div><strong>Email</strong><br><a href="mailto:your.email@gmail.com">your.email@gmail.com</a></div></div>
+      <div class="contact-item"><div class="contact-icon">🔗</div><div><strong>LinkedIn</strong><br><a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></div></div>
+      <div class="contact-item"><div class="contact-icon">⚡</div><div><strong>Availability</strong><br>Available immediately</div></div>
+    </div>
+    <div class="contact-form">
+      <div class="form-row"><label>Your Name</label><input type="text" placeholder="John Smith"></div>
+      <div class="form-row"><label>Your Email</label><input type="email" placeholder="john@company.com"></div>
+      <div class="form-row"><label>Company</label><input type="text" placeholder="Acme Corp"></div>
+      <div class="form-row"><label>Message</label><textarea placeholder="Hi Susmitha, I have a UiPath Developer role that might be a great fit..."></textarea></div>
+      <button class="submit-btn" onclick="alert('Thank you! Susmitha will get back to you within 24 hours.')">Send Message</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-links">
+    <a href="#about">About</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <p class="footer-copy">© 2026 Susmitha Pasnur · UiPath Certified Advanced RPA Developer · Houston, TX</p>
+</footer>
+
+</body>
+</html>
